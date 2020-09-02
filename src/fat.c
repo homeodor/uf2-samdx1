@@ -79,7 +79,9 @@ static const struct TextFile info[] = {
 #if USE_INDEX_HTM
     {.name = "INDEX   HTM", .content = indexFile},
 #endif
+//#ifndef CONCEAL_CURRENT
     {.name = "CURRENT UF2"},
+//#endif
 };
 #define NUM_FILES (sizeof(info) / sizeof(info[0]))
 #define NUM_DIRENTRIES (NUM_FILES + 1) // Code adds volume label as first root directory entry
